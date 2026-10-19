@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover practical tech accessories at GadgetNest.">
+  <title>GadgetNest | Smart Gadgets, Smarter Living</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">GadgetNest<span>.</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <nav class="navigation" id="navigation">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button class="cart-button" id="openCart">
+        Cart <span id="cartCount">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">TECH FOR EVERYDAY LIFE</span>
+        <h1>Smart Gadgets.<br><span>Smarter Living.</span></h1>
+        <p>
+          Discover practical tech accessories designed to make
+          studying, working and everyday life easier.
+        </p>
+        <a class="primary-button" href="#products">
+          EXPLORE OUR PRODUCTS <span>→</span>
+        </a>
+        <div class="hero-note">
+          <span class="status-dot"></span>
+          Discover your next everyday essential
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <img
+          src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=75"
+          alt="Modern smartphone"
+          class="hero-image">
+        <div class="floating-label">
+          <span class="status-dot"></span>
+          Smart choices. Simple living.
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><span class="benefit-icon">◇</span><span>Everyday Essentials</span></div>
+      <div><span class="benefit-icon">⌘</span><span>Practical Tech Finds</span></div>
+      <div><span class="benefit-icon">↗</span><span>Simple Shopping</span></div>
+    </section>
+
+    <section class="products-section section" id="products">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">OUR COLLECTION</span>
+          <h2>Featured <span>Products</span></h2>
+          <p>Useful accessories for your everyday setup.</p>
+        </div>
+        <span class="product-total" id="productTotal">6 products</span>
+      </div>
+
+      <div class="shop-controls">
+        <label class="search-box">
+          <span>⌕</span>
+          <input id="searchInput" type="search"
+            placeholder="Search products..." aria-label="Search products">
+        </label>
+        <select id="sortSelect" aria-label="Sort products">
+          <option value="featured">Featured</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+          <option value="name">Name: A to Z</option>
+        </select>
+      </div>
+
+      <div class="filter-list" id="filterList">
+        <button class="filter active" data-category="All">All Products</button>
+        <button class="filter" data-category="Phone Accessories">Phone Accessories</button>
+        <button class="filter" data-category="Workspace">Workspace</button>
+        <button class="filter" data-category="Computer Accessories">Computer Accessories</button>
+        <button class="filter" data-category="Travel Accessories">Travel</button>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>
+        No products found. Try a different search.
+      </p>
+      <p class="demo-note">
+        Product images and prices are examples. Verify supplier availability,
+        image usage rights, and all costs before selling.
+      </p>
+    </section>
+
+    <section class="about-section section" id="about">
+      <div class="about-visual">
+        <div class="about-symbol">G<span>.</span></div>
+        <div class="about-caption">TECH THAT FITS YOUR LIFE</div>
+      </div>
+      <div class="about-content">
+        <span class="eyebrow">ABOUT GADGETNEST</span>
+        <h2>Small upgrades.<br><span>Better everyday life.</span></h2>
+        <p>
+          GadgetNest is a concept store for useful technology accessories.
+          Our goal is to help you discover simple products for your desk,
+          devices, and daily routine.
+        </p>
+        <a class="text-link" href="#products">Explore the collection →</a>
+      </div>
+    </section>
+
+    <section class="shipping-section section">
+      <div>
+        <span class="eyebrow">BEFORE YOU ORDER</span>
+        <h2>Clear information.<br><span>Confident shopping.</span></h2>
+      </div>
+      <div class="shipping-grid">
+        <article>
+          <span class="info-icon">01</span>
+          <h3>Product Details</h3>
+          <p>Check product specifications and availability before ordering.</p>
+        </article>
+        <article>
+          <span class="info-icon">02</span>
+          <h3>Shipping</h3>
+          <p>Delivery areas, fees and estimated dates must be confirmed first.</p>
+        </article>
+        <article>
+          <span class="info-icon">03</span>
+          <h3>Returns</h3>
+          <p>Agree on return and refund conditions before making payment.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section section" id="contact">
+      <div>
+        <span class="eyebrow">GET IN TOUCH</span>
+        <h2>Questions about a <span>product?</span></h2>
+        <p>Send an enquiry and we'll help you with the next steps.</p>
+      </div>
+      <button class="primary-button" id="contactButton">MAKE AN ENQUIRY →</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="logo" href="#home">GadgetNest<span>.</span></a>
+    <p>Smart gadgets for everyday life.</p>
+    <div class="footer-links">
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <small>© <span id="year"></span> GadgetNest. Demo storefront.</small>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="overlay" id="cartOverlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer"
+    aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-header">
+      <div>
+        <span class="eyebrow">YOUR SELECTION</span>
+        <h2>Your Cart</h2>
+      </div>
+      <button class="icon-button" id="closeCart" aria-label="Close cart">✕</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">$0.00</strong>
+      </div>
+      <p>Shipping and final price are confirmed separately.</p>
+      <button class="primary-button full-button" id="checkoutButton">
+        CONTINUE TO ENQUIRY →
+      </button>
+    </div>
+  </aside>
+
+  <!-- Enquiry form -->
+  <div class="modal-backdrop" id="enquiryModal" hidden>
+    <section class="enquiry-modal" role="dialog"
+      aria-modal="true" aria-labelledby="formTitle">
+      <div class="drawer-header">
+        <div>
+          <span class="eyebrow">LET'S TALK</span>
+          <h2 id="formTitle">Order Enquiry</h2>
+        </div>
+        <button class="icon-button" id="closeEnquiry" aria-label="Close form">✕</button>
+      </div>
+
+      <p class="form-intro">
+        Submit your interest. This demo form opens your email app to send
+        the enquiry; it does not accept payments or automatically submit
+        data to a server.
+      </p>
+
+      <form id="enquiryForm">
+        <label>
+          Your name
+          <input name="name" required maxlength="100" autocomplete="name"
+            placeholder="Enter your name">
+        </label>
+        <label>
+          Email address
+          <input name="email" type="email" required maxlength="150"
+            autocomplete="email" placeholder="you@example.com">
+        </label>
+        <label>
+          Contact method or phone (optional)
+          <input name="contact" maxlength="100" placeholder="Preferred contact">
+        </label>
+        <label>
+          Product
+          <select name="product" id="enquiryProduct" required></select>
+        </label>
+        <label>
+          Quantity
+          <input name="quantity" type="number" min="1" max="99"
+            value="1" required>
+        </label>
+        <label>
+          City / delivery area
+          <input name="location" required maxlength="150"
+            placeholder="Your city or delivery area">
+        </label>
+        <label>
+          Message (optional)
+          <textarea name="message" rows="3" maxlength="1000"
+            placeholder="Any questions about the product?"></textarea>
+        </label>
+        <button class="primary-button full-button" type="submit">
+          PREPARE EMAIL ENQUIRY →
+        </button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </section>
+  </div>
+
+  <script>
+    // This script tag is intentionally empty.
+    // Store functionality is in script.js.
+  </script>
+</body>
+</html>
